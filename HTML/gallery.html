@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../CSS/gallery.css">
+    <script src="../JS/jquery-3.5.1.js"></script>
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+  <div id="header">
+    <img src="../Assets/LOGO-removebg-preview.png" alt="">
+</div>
+<div id="navbar">
+  <a href="../HTML/home.html">
+      <li class="navbar-item">HOME</li>
+  </a>
+  <li class="navbar-space">|</li>
+  <div id = "navbar-product">
+      <li class="navbar-item">
+          PRODUCT
+      </li>
+          <div id="navbar-item-dropdown">
+              <div class="navbar-item">
+                  <a href="../HTML/vixian.html">
+                      VIXIAN
+                  </a>
+              </div>
+              <div class="navbar-item">
+                  <a href="../HTML/kawasako.html">
+                      KAWASAKO
+                  </a>
+              </div>
+          </div>
+  </div>
+  <li class="navbar-space">|</li>
+  <a href="../HTML/gallery.html">
+      <li class="navbar-item">GALLERY</li>
+  </a>
+  <li class="navbar-space">|</li>
+  <a href="../HTML/reserve.html">
+      <li class="navbar-item">RESERVE</li>
+  </a>
+</div>
+    <div class="gallery">
+          <img src="../Assets/hostess-3-min-small.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          <img src="../Assets/ospiti-alba-parietti-min-small.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          <img src="../Assets/presentazione-pata-min-small.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          <img src="../Assets/pubblico-3-min-small.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          <img src="../Assets/shooting-7-Stile-Italiano-min-min-small.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+          <img src="../Assets/4b-min-small.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+          <img src="../Assets/case-bmw-min-1-small.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+          <img src="../Assets/case-ktm-1-min-small.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+      </div>
+      
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="mySlides">
+            <div class="text">Motor Bike Expo Veerona 2019</div>
+            <img src="../Assets/hostess-3-min.jpg" >
+          </div>
+          <div class="mySlides">
+            <div class="text">Motul</div>
+            <img src="../Assets/ospiti-alba-parietti-min.jpg" >
+          </div>
+          <div class="mySlides">
+            <div class="text">Booth Yamaha</div>
+            <img src="../Assets/presentazione-pata-min.jpg" >
+          </div>
+          <div class="mySlides">
+            <div class="text">Booth Ducati</div>
+            <img src="../Assets/pubblico-3-min.jpg" >
+          </div>
+          <div class="mySlides">
+            <div class="text">Stile Italiano</div>
+            <img src="../Assets/shooting-7-Stile-Italiano-min-min.jpg" >
+          </div>
+          <div class="mySlides">
+            <div class="text">Harley Davidson</div>
+            <img src="../Assets/4b-min.jpg" >
+          </div>
+          <div class="mySlides">
+            <div class="text">Booth BMW</div>
+            <img src="../Assets/case-bmw-min-1.jpg" >
+          </div>
+          <div class="mySlides">
+            <div class="text">Booth KTM</div>
+            <img src="../Assets/case-ktm-1-min.jpg" >
+          </div>
+      </div>
+      <div class="footer">
+        <div class="footer-left">
+            <div class="footer-title">
+                Visit Us
+            </div>
+            <div class="footer-detail">
+                Jl. Pulo Gadung Raya No. 40
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-title">
+                Contact Us
+            </div>
+            <div class="footer-detail">
+                +62 2323 4545
+                <div id="footer-icon">
+                     <img src="../Assets/619009-small-removebg-preview.png" alt="">
+                    <img src="../Assets/md_5af2d4cabfdf2-removebg-preview.png" alt="">
+                    <img src="../Assets/rotate-resize-tool-youtube-logo-vector-white-white-youtube-logo-png-740_458-removebg-preview.png" alt="">
+                    <img src="../Assets/index-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        &copy; Handry, Hansen, Jeffry 2021
+    </div>
+</body>
+</html>

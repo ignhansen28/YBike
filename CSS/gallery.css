@@ -1,0 +1,199 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+*{
+  box-sizing: border-box;
+}
+
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffb101;
+  height: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 200px;
+}
+
+#header img{
+  height: 250px;
+}
+
+#navbar{
+  display: flex;
+  justify-content:space-evenly;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: white;
+  height: 100px;
+  margin-top: 15px;
+  margin-bottom: -40px;
+}
+
+.navbar-item{
+  list-style: none;
+  position: relative;
+}
+
+.navbar-item:hover{
+  background-color: white;
+  border-radius: 12px;
+  display: inline-block;
+  width: auto;
+  height: 40px;
+  cursor: pointer;
+}
+
+#navbar-item-dropdown{
+  display: none;
+  position: absolute;
+  background-color: #ffb101;
+  width: 200px;
+  padding: 5px;
+  right: 0;
+}
+
+#navbar-product:hover #navbar-item-dropdown{
+  display: block;
+}
+
+#navbar-product{
+  position: relative;
+}
+
+.navbar-space{
+  list-style: none;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.gallery{
+    margin: 10px 50px;
+}
+.gallery img{
+    transition: 1s;
+    padding: 15px;
+    width: 320px;
+}
+.gallery img:hover{
+    filter: grayscale(100%);
+    transform: scale(1,1);
+}
+   
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 90px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mySlides {
+    padding: 0px 250px;
+  }
+  .mySlides img {
+    width: 100%;
+  }
+  .text {
+    color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+.footer{
+    background-color: black;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 15rem;
+    width: 100%;
+}
+
+.footer-left, .footer-right{
+    color: white;
+}
+
+.footer-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-detail{
+    font-size: 17px;
+}
+
+.footer-detail img{
+    height: 30px;
+}
+
+#copyright{
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width:500px) {
+  #navbar{
+      font-size: 15px;
+      text-align: left;
+      height: 75px;
+      width: 90%;
+      margin-left: 0%;
+  }
+  .footer{
+      height: 400px;
+      display: grid;
+      text-align: center;
+      width: 90%;
+      font-size: 15px;
+  }
+}
+  
+  
